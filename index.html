@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QQ1000资源网-致力于打造简洁交流免费分享资源社区</title>
+    <!-- 引入苹果风格字体 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500;600&family=SF+Pro+Text:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 全局样式 - 苹果官网质感 */
+        body {
+            font-family: "SF Pro Display", "SF Pro Text", -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #f5f5f7;
+            color: #1d1d1f;
+            line-height: 1.47;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* 顶部导航栏 */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 48px;
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: saturate(180%) blur(20px);
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 20px;
+        }
+
+        .nav-container {
+            width: 100%;
+            max-width: 980px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Q 字母LOGO 苹果风格 */
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 18px;
+            font-weight: 600;
+            color: #1d1d1f;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 24px;
+            height: 24px;
+            background-color: #0071e3;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+        }
+
+        .nav-links a {
+            color: #424245;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s ease;
+        }
+
+        .nav-links a:hover {
+            color: #0071e3;
+        }
+
+        /* 主内容区 */
+        .main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 120px 20px 80px;
+            text-align: center;
+        }
+
+        .content-wrapper {
+            max-width: 600px;
+            animation: fadeIn 1s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .title {
+            font-size: 48px;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+            margin-bottom: 24px;
+            color: #1d1d1f;
+        }
+
+        .subtitle {
+            font-size: 21px;
+            color: #86868b;
+            margin-bottom: 40px;
+            line-height: 1.5;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0071e3;
+            color: white;
+            border-radius: 24px;
+            font-size: 15px;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+
+        .domain {
+            font-size: 16px;
+            color: #424245;
+            margin-top: 20px;
+        }
+
+        /* 底部信息 */
+        .footer {
+            background-color: #f5f5f7;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 12px;
+            color: #86868b;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .footer a {
+            color: #86868b;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* 响应式适配 */
+        @media (max-width: 768px) {
+            .title {
+                font-size: 32px;
+            }
+            .subtitle {
+                font-size: 18px;
+            }
+            .nav-links {
+                gap: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span>QQ1000</span>
+            </a>
+            <div class="nav-links">
+                <a href="#">首页</a>
+                <a href="#">文章</a>
+                <a href="#">关于</a>
+                <a href="#">联系</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主内容 -->
+    <main class="main">
+        <div class="content-wrapper">
+            <div class="status-badge">系统维护中</div>
+            <h1 class="title">个人博客升级中</h1>
+            <p classsubtitle">我们正在对网站进行优化升级，带来更好的阅读体验<br>敬请期待全新版本上线</p>
+            <p class="domain">官方网站：WWW.QQ1000.COM</p>
+        </div>
+    </main>
+
+    <!-- 底部 -->
+    <footer class="footer">
+        <div class="container">
+            <p>Copyright © 2026 个人博客 All Rights Reserved.</p>
+            <p style="margin-top: 6px;">
+                <a href="https://beian.miit.gov.cn/" target="_blank">苏ICP备2025165226号-1</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
